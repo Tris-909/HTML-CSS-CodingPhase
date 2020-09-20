@@ -197,7 +197,7 @@ body {
 
   &_navbar {
     position: absolute;
-    left: 30%;
+    left: 32%;
     top: 92%;
     width: 50%;
     height: 15%;
@@ -302,6 +302,308 @@ body {
     .top_navbar_text {
       color: rgb(214, 214, 214);
       font-weight: 600;
+    }
+  }
+}
+
+.body {
+  height: 1300px;
+  background-color: #dddddd;
+  padding: 50px;
+
+  &_content {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "LeftContent RightContent";
+    column-gap: 5%;
+
+    &_left {
+      grid-area: LeftContent;
+      background-color: red;
+
+      .bcl_infoCard {
+        background-color: white;
+        padding: 10px;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px black;
+
+        &_padding {
+          padding: 20px;
+        }
+
+        &_intro {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          &_icon {
+            font-size: 2.5em;
+          }
+
+          &_text {
+            margin-left: 10px;
+            font-size: 1.25em;
+          }
+        }
+
+        &_title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+
+          &_icon {
+            font-size: 0.9em;
+            color: rgb(214, 214, 214);
+
+            &:hover {
+              color: rgb(0, 140, 255);
+              transition: 0.2s;
+            }
+          }
+        }
+
+        &_location {
+          font-size: 1em;
+          margin-bottom: 20px;
+          color: rgb(214, 214, 214);
+        }
+
+        &_buttonContainer {
+          &_button {
+            color: rgb(0, 140, 255);
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+            font-size: 1.25em;
+          }
+        }
+      }
+
+      .bcl_photos {
+        background-color: white;
+        width: 100%;
+        height: 450px;
+        margin-bottom: 10px;
+
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+        grid-template-areas:
+          "Title"
+          "Gallery";
+
+        &_Titlecontainer {
+          grid-area: Title;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          &_left {
+            display: flex;
+
+            &_Icon {
+              font-size: 1.25em;
+              margin-right: 10px;
+            }
+          }
+
+          &_right {
+            &_icon {
+              font-size: 1.25em;
+            }
+          }
+        }
+
+        &_gallery {
+          grid-area: Gallery;
+
+          display: grid;
+          grid-template-areas: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9";
+          column-gap: 5px;
+          row-gap: 5px;
+
+          .gallery_images {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          &_img1 {
+            grid-area: img1;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCa9d654V8Kv1lHH-vkrnQ7nf6S98mDpwsoA&usqp=CAU");
+          }
+
+          &_img2 {
+            grid-area: img2;
+            background-image: url("https://picsum.photos/seed/picsum/200/300");
+          }
+
+          &_img3 {
+            grid-area: img3;
+            background-image: url("https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg");
+          }
+
+          &_img4 {
+            grid-area: img4;
+            background-image: url("https://thumbs.dreamstime.com/z/random-lines-abstract-black-white-texture-abstract-art-abstract-pattern-ragged-wavy-corrugated-jumble-line-shapes-royalty-159497755.jpg");
+          }
+
+          &_img5 {
+            grid-area: img5;
+            background-image: url("https://i.pinimg.com/236x/5d/39/4f/5d394f0efd36850db1b33ceb7a055e48.jpg");
+          }
+
+          &_img6 {
+            grid-area: img6;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-gaMKMi4hjC8fInR8T00Naj4NpSduh7ycGg&usqp=CAU");
+          }
+
+          &_img7 {
+            grid-area: img7;
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/642b3ef4-4c03-4e93-a4eb-80c8146bee5d/d4jbdkh-59c39f42-eb4c-48d8-b06e-5f9877d4a06d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNjQyYjNlZjQtNGMwMy00ZTkzLWE0ZWItODBjODE0NmJlZTVkXC9kNGpiZGtoLTU5YzM5ZjQyLWViNGMtNDhkOC1iMDZlLTVmOTg3N2Q0YTA2ZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.fLIBxuAhlzCEF2SOUlhSJy7sD8FYV9KypeZ0stKl8_E");
+          }
+
+          &_img8 {
+            grid-area: img8;
+            background-image: url("https://i.redd.it/flnirv5p08x11.jpg");
+          }
+
+          &_img9 {
+            grid-area: img9;
+            background-image: url("https://www.pikpng.com/pngl/m/2-24776_cute-random-png-clipart.png");
+          }
+        }
+      }
+
+      .bcl_friends {
+        background-color: white;
+        width: 100%;
+        height: 450px;
+        margin-bottom: 10px;
+
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+        grid-template-areas:
+          "Title"
+          "Gallery";
+
+        &_Titlecontainer {
+          grid-area: Title;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          &_left {
+            display: flex;
+
+            &_Icon {
+              font-size: 1.25em;
+              margin-right: 10px;
+            }
+          }
+
+          &_right {
+            &_icon {
+              font-size: 1.25em;
+            }
+          }
+        }
+
+        &_gallery {
+          grid-area: Gallery;
+
+          display: grid;
+          grid-template-areas: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9";
+          column-gap: 5px;
+          row-gap: 5px;
+
+          .gallery_images {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          &_img1 {
+            grid-area: img1;
+            background-image: url("https://images.generated.photos/oO4hnwWAcGN69LKqAUTiL3uKADBoTgo1I0yfmA_V7GM/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1NjQwNzUuanBn.jpg");
+          }
+
+          &_img2 {
+            grid-area: img2;
+            background-image: url("https://images.generated.photos/Ay2Ru4e_NvQl6QqcaVBfEecY9z4-PKegABR95j_klGc/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1NDIxMzguanBn.jpg");
+          }
+
+          &_img3 {
+            grid-area: img3;
+            background-image: url("https://images.generated.photos/_yG-EQlXuxp2snmFg6CJoMMtbZQTo2RLb04Kdr2lRE4/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA0MTg3NjguanBn.jpg");
+          }
+
+          &_img4 {
+            grid-area: img4;
+            background-image: url("https://images.generated.photos/b_7PAVu0guqfVdYQdC-bMNDSHvcbHMFkSwGWL6uTX1g/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA4NDk3MjcuanBn.jpg");
+          }
+
+          &_img5 {
+            grid-area: img5;
+            background-image: url("https://images.generated.photos/cYblYn8HmPMp6Z18mOuW_VvZTjU28dLwQaCp05WuQ44/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyMjM2MzMuanBn.jpg");
+          }
+
+          &_img6 {
+            grid-area: img6;
+            background-image: url("https://images.generated.photos/hsDqX_-NqNSJyAFktwRR3HOIH_6ubtzWhQ9NqFx0doY/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyOTYxNzIuanBn.jpg");
+          }
+
+          &_img7 {
+            grid-area: img7;
+            background-image: url("https://images.generated.photos/xcLo4dWLhMcCJMv0TjhUo7FO9jDdaU8EAoC2kSfLafI/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwNTYwNDUuanBn.jpg");
+          }
+
+          &_img8 {
+            grid-area: img8;
+            background-image: url("https://images.generated.photos/QRzFlQh4r5Te-4-R55U6vgdbGLH5-9ujRKl0oU40Y4k/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA2ODI4MzcuanBn.jpg");
+          }
+
+          &_img9 {
+            grid-area: img9;
+            background-image: url("https://images.generated.photos/YHkop4O20ludTdLsJvOn4ROBaPu0V8SFY3lU6HHxrxQ/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwMjg5MjUuanBn.jpg");
+          }
+        }
+      }
+    }
+
+    &_right {
+      grid-area: RightContent;
+      background-color: yellow;
     }
   }
 }
