@@ -146,7 +146,6 @@ body {
   .body_content {
     width: 100%;
     height: 100%;
-    background-color: blue;
     display: grid;
     grid-template-columns: 25% 55%;
     grid-template-rows: 1fr;
@@ -160,7 +159,7 @@ body {
         width: 100%;
         height: 250px;
         margin-bottom: 10px;
-        box-shadow: 1px 1px black; }
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
         .body_content_left .bcl_infoCard_padding {
           padding: 20px; }
         .body_content_left .bcl_infoCard_intro {
@@ -199,6 +198,7 @@ body {
         width: 100%;
         height: 450px;
         margin-bottom: 10px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
         padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -262,6 +262,7 @@ body {
         width: 100%;
         height: 450px;
         margin-bottom: 10px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
         padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -322,7 +323,6 @@ body {
             background-image: url("https://images.generated.photos/YHkop4O20ludTdLsJvOn4ROBaPu0V8SFY3lU6HHxrxQ/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAwMjg5MjUuanBn.jpg"); }
     .body_content_right {
       grid-area: RightContent;
-      background-color: yellow;
       position: relative; }
       .body_content_right .top_navbar {
         position: absolute;
@@ -331,6 +331,7 @@ body {
         width: 100%;
         height: 7%;
         background-color: white;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         display: grid;
         grid-template-columns: 22.5% 22.5% 22.5% 22.5% 10%;
@@ -393,8 +394,10 @@ body {
           font-weight: 600; }
       .body_content_right .post {
         width: 100%;
-        height: 600px;
+        height: 700px;
         background-color: white;
+        margin-bottom: 100px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 15% 50% 10% 20% 15%;
@@ -557,3 +560,63 @@ body {
             .body_content_right .post_yourInput_Icons_Pacman {
               font-size: 1.5em;
               color: #d6d6d6; }
+      .body_content_right .post2 {
+        width: 100%;
+        height: 425px;
+        background-color: red;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 85% 15%;
+        grid-template-areas: "Image" "Text"; }
+        .body_content_right .post2_image {
+          grid-area: Image;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background: url("https://cdn.shopify.com/s/files/1/0088/7576/9952/articles/ef5d3fe7d7fe994724e438cddfb8c3c1_fada633f-9fe2-48ed-aa66-64218e8c72b2_2000x.jpg?v=1554317256");
+          position: relative; }
+          .body_content_right .post2_image_text {
+            height: 40%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(107, 107, 107, 0.747);
+            padding: 20px 20px 20px 20px;
+            box-sizing: border-box; }
+            .body_content_right .post2_image_text_padding {
+              width: 100%;
+              height: 100%; }
+              .body_content_right .post2_image_text_padding .post2_textTitle {
+                font-size: 2em;
+                color: white;
+                margin-bottom: 5px;
+                font-weight: 400; }
+              .body_content_right .post2_image_text_padding .post2_textText {
+                color: white;
+                margin-bottom: 15px; }
+              .body_content_right .post2_image_text_padding .post2_textIconContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; }
+                .body_content_right .post2_image_text_padding .post2_textIconContainer_Time {
+                  color: white;
+                  font-size: 1em; }
+                .body_content_right .post2_image_text_padding .post2_textIconContainer_Icon {
+                  color: white;
+                  font-size: 1.5em; }
+        .body_content_right .post2_title {
+          grid-area: Text;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .body_content_right .post2_title_text {
+            font-size: 1.5em;
+            margin-left: 30px;
+            color: #d6d6d6; }
+          .body_content_right .post2_title_icon {
+            font-size: 1.5em;
+            margin-right: 30px;
+            color: #d6d6d6; }
