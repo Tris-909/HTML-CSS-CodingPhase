@@ -91,6 +91,7 @@ body {
 .top {
   width: 100%;
   height: 80vh;
+  position: relative;
   background-image: url("../img/backgrounds.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -131,9 +132,76 @@ body {
         column-gap: 15px; }
         .top_container_text .button_container .button {
           color: white;
-          background-color: rgba(255, 255, 255, 0.795);
+          background-color: rgba(255, 255, 255, 0.5);
           padding: 10px;
           font-weight: 500;
           font-size: 1em;
           border: none;
           cursor: pointer; }
+  .top_navbar {
+    position: absolute;
+    left: 30%;
+    top: 92%;
+    width: 50%;
+    height: 15%;
+    background-color: white;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "TimeLine About Friends Photos Menu"; }
+    .top_navbar_center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .top_navbar_timeline {
+      grid-area: TimeLine; }
+      .top_navbar_timeline:hover .top_navbar_icon {
+        color: #008cff; }
+      .top_navbar_timeline:hover .top_navbar_text {
+        color: #008cff; }
+      .top_navbar_timeline:hover {
+        border-bottom: 3px solid #008cff;
+        transition: 0.2s; }
+    .top_navbar_about {
+      grid-area: About; }
+      .top_navbar_about:hover .top_navbar_icon {
+        color: #008cff; }
+      .top_navbar_about:hover .top_navbar_text {
+        color: #008cff; }
+      .top_navbar_about:hover {
+        border-bottom: 3px solid #008cff;
+        transition: 0.2s; }
+    .top_navbar_friends {
+      grid-area: Friends; }
+      .top_navbar_friends:hover .top_navbar_icon {
+        color: #008cff; }
+      .top_navbar_friends:hover .top_navbar_text {
+        color: #008cff; }
+      .top_navbar_friends:hover {
+        border-bottom: 3px solid #008cff;
+        transition: 0.2s; }
+    .top_navbar_photos {
+      grid-area: Photos; }
+      .top_navbar_photos:hover .top_navbar_icon {
+        color: #008cff; }
+      .top_navbar_photos:hover .top_navbar_text {
+        color: #008cff; }
+      .top_navbar_photos:hover {
+        border-bottom: 3px solid #008cff;
+        transition: 0.2s; }
+    .top_navbar_more {
+      grid-area: Menu; }
+      .top_navbar_more:hover .top_navbar_icon {
+        color: #008cff; }
+      .top_navbar_more:hover {
+        border-bottom: 3px solid #008cff;
+        transition: 0.2s; }
+    .top_navbar .top_navbar_icon {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      color: #d6d6d6; }
+    .top_navbar .top_navbar_text {
+      color: #d6d6d6;
+      font-weight: 600; }
