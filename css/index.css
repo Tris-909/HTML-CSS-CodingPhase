@@ -4,7 +4,8 @@ body {
 
 .header {
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #3f4ea5;
   display: grid;
   grid-template-columns: 20% 45% 35%;
@@ -86,3 +87,53 @@ body {
           outline: none; }
         .header_searchbar_search .searchbar::placeholder {
           color: white; }
+
+.top {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/backgrounds.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .top_container {
+    width: 40%;
+    height: 40%;
+    left: 5%;
+    top: 40%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Avatar Name"; }
+    .top_container_avatar {
+      grid-area: Avatar;
+      padding: 20px; }
+      .top_container_avatar .avatar {
+        background-image: url("../img/tt_avatar_small.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 300px; }
+    .top_container_text {
+      grid-area: Name;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .top_container_text .name {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 10px; }
+      .top_container_text .button_container {
+        display: flex;
+        column-gap: 15px; }
+        .top_container_text .button_container .button {
+          color: white;
+          background-color: rgba(255, 255, 255, 0.795);
+          padding: 10px;
+          font-weight: 500;
+          font-size: 1em;
+          border: none;
+          cursor: pointer; }
