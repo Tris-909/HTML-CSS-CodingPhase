@@ -1,4 +1,88 @@
 body {
-  background: red;
-  height: 1000px;
-  width: 1000px; }
+  margin: 0px;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #3f4ea5;
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo Options Searchbar"; }
+  .header_logo {
+    grid-area: Logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .header_logo .logo_container {
+      position: relative;
+      left: 20%;
+      text-align: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      padding: auto; }
+  .header_options {
+    grid-area: Options;
+    display: flex; }
+    .header_options_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      border-right: 1px solid rgba(165, 165, 165, 0.397); }
+      .header_options_text_profile {
+        margin-right: 30px; }
+        .header_options_text_profile .link {
+          text-decoration: none;
+          color: white; }
+      .header_options_text_home {
+        margin-right: 30px; }
+        .header_options_text_home .link {
+          text-decoration: none;
+          color: white; }
+    .header_options_icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      border-right: 1px solid rgba(165, 165, 165, 0.397); }
+      .header_options_icons .icons_container {
+        height: 100%;
+        color: white;
+        font-size: 1.5rem; }
+        .header_options_icons .icons_container:nth-child(2) {
+          margin-left: 5%;
+          margin-right: 5%; }
+    .header_options_menu {
+      display: flex;
+      margin-left: 5%; }
+      .header_options_menu .menu_container {
+        height: 100%;
+        color: white;
+        font-size: 1.5rem; }
+  .header_searchbar {
+    grid-area: Searchbar;
+    display: flex; }
+    .header_searchbar_icon {
+      height: 100%;
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 10px; }
+    .header_searchbar_search {
+      width: 80%; }
+      .header_searchbar_search .searchbar {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(207, 207, 207, 0.623);
+        caret-color: white;
+        color: white;
+        font-size: 18px; }
+        .header_searchbar_search .searchbar:focus {
+          border: none;
+          outline: none; }
+        .header_searchbar_search .searchbar::placeholder {
+          color: white; }

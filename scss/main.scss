@@ -1,5 +1,128 @@
 body {
-  background: red;
-  height: 1000px;
-  width: 1000px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(63, 78, 165);
+
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo Options Searchbar";
+
+  &_logo {
+    grid-area: Logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo_container {
+      position: relative;
+      left: 20%;
+      text-align: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      padding: auto;
+    }
+  }
+
+  &_options {
+    grid-area: Options;
+    display: flex;
+
+    &_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      border-right: 1px solid rgba(165, 165, 165, 0.397);
+
+      &_profile {
+        margin-right: 30px;
+
+        .link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      &_home {
+        margin-right: 30px;
+
+        .link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    &_icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      border-right: 1px solid rgba(165, 165, 165, 0.397);
+
+      .icons_container {
+        height: 100%;
+        color: white;
+        font-size: 1.5rem;
+
+        &:nth-child(2) {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+      }
+    }
+
+    &_menu {
+      display: flex;
+      margin-left: 5%;
+      .menu_container {
+        height: 100%;
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &_searchbar {
+    grid-area: Searchbar;
+    display: flex;
+
+    &_icon {
+      height: 100%;
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    &_search {
+      width: 80%;
+
+      .searchbar {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(207, 207, 207, 0.623);
+        caret-color: white;
+        color: white;
+        font-size: 18px;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
 }

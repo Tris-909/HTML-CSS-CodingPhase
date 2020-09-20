@@ -4,30 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodingPhase HTML&CSS Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
-      <div class="header_logo">Logo</div>
+      <div class="header_logo">
+        <div class="logo_container">Logo</div>
+      </div>
 
       <div class="header_options">
         <div class="header_options_text">
-          <div class="header_options_text_profile">Chloe</div>
-          <div class="header_options_text_home">Home</div>
+          <div class="header_options_text_profile">
+            <a href="chloe.html" class="link">Chloe</a>
+          </div>
+          <div class="header_options_text_home">
+            <a href="home.html" class="link">Home</a>
+          </div>
         </div>
+
         <div class="header_options_icons">
-          <div class="icons_container"></div>
-          <div class="icons_container"></div>
-          <div class="icons_container"></div>
+          <div class="icons_container"><i class="fas fa-user-friends"></i></div>
+          <div class="icons_container"><i class="fas fa-comments"></i></div>
+          <div class="icons_container"><i class="fas fa-bell"></i></div>
         </div>
+
         <div class="header_options_menu">
-          <div class="menu_container"></div>
+          <div class="menu_container"><i class="fas fa-unlock"></i></div>
         </div>
       </div>
 
       <div class="header_searchbar">
-        <div class="header_searchbar_icon"></div>
-        <div class="header_searchbar_search"></div>
+        <div class="header_searchbar_icon"><i class="fas fa-search"></i></div>
+        <div class="header_searchbar_search">
+          <input type="text" class="searchbar" placeholder="Search" />
+        </div>
       </div>
     </header>
   </body>
