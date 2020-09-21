@@ -1,0 +1,44 @@
+&_title {
+  grid-area: Title;
+
+  display: grid;
+  grid-template-columns: 13% 77% 10%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Avatar Info Icon";
+
+  &_avatar {
+    padding: 10px 15px;
+
+    &_picture {
+      width: 100%;
+      border-radius: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &_name a {
+      color: rgb(0, 140, 255);
+      cursor: pointer;
+    }
+
+    &_time {
+      color: #d6d6d6;
+    }
+  }
+
+  &_icon {
+    font-size: 1.5em;
+    color: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

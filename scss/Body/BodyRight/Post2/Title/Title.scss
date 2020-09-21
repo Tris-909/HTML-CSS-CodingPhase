@@ -1,0 +1,20 @@
+&_title {
+  grid-area: Text;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_text {
+    font-size: 1.5em;
+    margin-left: 30px;
+    color: #d6d6d6;
+  }
+
+  &_icon {
+    font-size: 1.5em;
+    margin-right: 30px;
+    color: #d6d6d6;
+  }
+}

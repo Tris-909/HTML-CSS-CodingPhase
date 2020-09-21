@@ -1,0 +1,7 @@
+&_left {
+  grid-area: LeftContent;
+
+  @import "./InfoCard/InfoCard.scss";
+  @import "./Photos/Photos.scss";
+  @import "./Friends/Friends.scss";
+}

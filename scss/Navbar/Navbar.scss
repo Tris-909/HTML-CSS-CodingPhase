@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(63, 78, 165);
+
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo Options Searchbar";
+
+  @import "./Logo/Logo.scss";
+
+  @import "./Options/Options.scss";
+
+  @import "./SearchBar/SearchBar.scss";
+}

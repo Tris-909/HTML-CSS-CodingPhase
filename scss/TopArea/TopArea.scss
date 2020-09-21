@@ -1,0 +1,67 @@
+.top {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-image: url("../img/backgrounds.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_container {
+    width: 40%;
+    height: 40%;
+    left: 5%;
+    top: 40%;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Avatar Name";
+
+    &_avatar {
+      grid-area: Avatar;
+      padding: 20px;
+
+      .avatar {
+        background-image: url("../img/tt_avatar_small.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 300px;
+      }
+    }
+
+    &_text {
+      grid-area: Name;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .name {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .button_container {
+        display: flex;
+        column-gap: 15px;
+
+        .button {
+          color: white;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 10px;
+          font-weight: 500;
+          font-size: 1em;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

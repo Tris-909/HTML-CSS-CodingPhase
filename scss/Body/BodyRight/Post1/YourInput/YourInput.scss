@@ -1,0 +1,74 @@
+&_yourInput {
+  grid-area: Input;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 12% 70% 15%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Avatar Searchbar Icons";
+
+  &_avatar {
+    padding: 10px 15px;
+    grid-area: Avatar;
+
+    &_picture {
+      width: 100%;
+      border-radius: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_input {
+    grid-area: Searchbar;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_searchbar {
+      width: 100%;
+      border-bottom: 1px solid rgba(207, 207, 207, 0.623);
+
+      .post_searchbar {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(207, 207, 207, 0.623);
+        caret-color: #d6d6d6;
+        color: #d6d6d6;
+        font-size: 18px;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #d6d6d6;
+        }
+      }
+    }
+  }
+
+  &_Icons {
+    grid-area: Icons;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &_Image {
+      font-size: 1.5em;
+      color: #d6d6d6;
+      margin-right: 20px;
+    }
+
+    &_Pacman {
+      font-size: 1.5em;
+      color: #d6d6d6;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.post2 {
+  width: 100%;
+  height: 425px;
+  background-color: red;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85% 15%;
+  grid-template-areas:
+    "Image"
+    "Text";
+
+  @import "./Post2Picture/Post2Picture.scss";
+  @import "./Title/Title.scss";
+}

@@ -1,0 +1,59 @@
+&_options {
+  grid-area: Options;
+  display: flex;
+
+  &_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-right: 1px solid rgba(165, 165, 165, 0.397);
+
+    &_profile {
+      margin-right: 30px;
+
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    &_home {
+      margin-right: 30px;
+
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  &_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-right: 1px solid rgba(165, 165, 165, 0.397);
+
+    .icons_container {
+      height: 100%;
+      color: white;
+      font-size: 1.5rem;
+
+      &:nth-child(2) {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &_menu {
+    display: flex;
+    margin-left: 5%;
+    .menu_container {
+      height: 100%;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+&_right {
+  grid-area: RightContent;
+  position: relative;
+
+  @import "./MenuOptions/MenuOptions.scss";
+  @import "./Post1/Post1.scss";
+  @import "./Post2/Post2.scss";
+}

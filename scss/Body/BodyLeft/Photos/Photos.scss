@@ -1,0 +1,105 @@
+.bcl_photos {
+  background-color: white;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 85%;
+  grid-template-areas:
+    "Title"
+    "Gallery";
+
+  &_Titlecontainer {
+    grid-area: Title;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &_left {
+      display: flex;
+
+      &_Icon {
+        font-size: 1.25em;
+        margin-right: 10px;
+      }
+    }
+
+    &_right {
+      &_icon {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  &_gallery {
+    grid-area: Gallery;
+
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img1 img2 img3"
+      "img4 img5 img6"
+      "img7 img8 img9";
+    column-gap: 5px;
+    row-gap: 5px;
+
+    .gallery_images {
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &_img1 {
+      grid-area: img1;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCa9d654V8Kv1lHH-vkrnQ7nf6S98mDpwsoA&usqp=CAU");
+    }
+
+    &_img2 {
+      grid-area: img2;
+      background-image: url("https://picsum.photos/seed/picsum/200/300");
+    }
+
+    &_img3 {
+      grid-area: img3;
+      background-image: url("https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg");
+    }
+
+    &_img4 {
+      grid-area: img4;
+      background-image: url("https://thumbs.dreamstime.com/z/random-lines-abstract-black-white-texture-abstract-art-abstract-pattern-ragged-wavy-corrugated-jumble-line-shapes-royalty-159497755.jpg");
+    }
+
+    &_img5 {
+      grid-area: img5;
+      background-image: url("https://i.pinimg.com/236x/5d/39/4f/5d394f0efd36850db1b33ceb7a055e48.jpg");
+    }
+
+    &_img6 {
+      grid-area: img6;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-gaMKMi4hjC8fInR8T00Naj4NpSduh7ycGg&usqp=CAU");
+    }
+
+    &_img7 {
+      grid-area: img7;
+      background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/642b3ef4-4c03-4e93-a4eb-80c8146bee5d/d4jbdkh-59c39f42-eb4c-48d8-b06e-5f9877d4a06d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNjQyYjNlZjQtNGMwMy00ZTkzLWE0ZWItODBjODE0NmJlZTVkXC9kNGpiZGtoLTU5YzM5ZjQyLWViNGMtNDhkOC1iMDZlLTVmOTg3N2Q0YTA2ZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.fLIBxuAhlzCEF2SOUlhSJy7sD8FYV9KypeZ0stKl8_E");
+    }
+
+    &_img8 {
+      grid-area: img8;
+      background-image: url("https://i.redd.it/flnirv5p08x11.jpg");
+    }
+
+    &_img9 {
+      grid-area: img9;
+      background-image: url("https://www.pikpng.com/pngl/m/2-24776_cute-random-png-clipart.png");
+    }
+  }
+}

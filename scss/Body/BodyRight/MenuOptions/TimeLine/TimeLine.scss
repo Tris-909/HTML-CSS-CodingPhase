@@ -1,0 +1,15 @@
+&_timeline {
+  grid-area: TimeLine;
+
+  &:hover .top_navbar_icon {
+    color: rgb(0, 140, 255);
+  }
+  &:hover .top_navbar_text {
+    color: rgb(0, 140, 255);
+  }
+
+  &:hover {
+    border-bottom: 3px solid rgb(0, 140, 255);
+    transition: 0.2s;
+  }
+}

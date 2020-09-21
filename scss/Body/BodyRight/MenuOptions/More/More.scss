@@ -1,0 +1,12 @@
+&_more {
+  grid-area: Menu;
+
+  &:hover .top_navbar_icon {
+    color: rgb(0, 140, 255);
+  }
+
+  &:hover {
+    border-bottom: 3px solid rgb(0, 140, 255);
+    transition: 0.2s;
+  }
+}

@@ -1,0 +1,19 @@
+.body {
+  height: 1300px;
+  background-color: #dddddd;
+  padding: 50px;
+
+  &_content {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 25% 55%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "LeftContent RightContent";
+    column-gap: 5%;
+
+    @import "./BodyLeft/BodyLeft.scss";
+    @import "./BodyRight/BodyRight.scss";
+  }
+}
